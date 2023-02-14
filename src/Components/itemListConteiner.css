@@ -1,0 +1,19 @@
+.txtGreeting{
+    font-size: x-large;
+    color: bisque;
+    padding: 10px;
+    font-weight: 600;
+}
+.escudo{
+    width: 5%;
+    text-align: center;
+    padding: 10px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;    
+    top: 50%;
+    border: 1px solid black;
+    background: linear-gradient(to right,#05046b,blue ,#cbda0498);
+}
