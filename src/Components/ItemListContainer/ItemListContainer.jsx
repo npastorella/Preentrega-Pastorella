@@ -1,7 +1,7 @@
 import React, {useState , useEffect} from 'react';
 import "./ItemListConteiner.css";
 import escudo from "../../imagenes/escudo-BJ.png";
-import camisetas from "/data/dataCamisetas.js";
+import {camisetas} from "../../data/dataCamisetas";
 import { useParams } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 

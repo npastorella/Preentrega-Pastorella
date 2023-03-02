@@ -18,3 +18,7 @@
 .plantilla{
     justify-content: center
 }
+
+.fondo{
+    background: linear-gradient(to right,#05046b,blue ,#cbda0498);
+}

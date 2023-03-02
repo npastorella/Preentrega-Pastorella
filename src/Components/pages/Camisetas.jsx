@@ -1,13 +1,13 @@
 import React from 'react';
-import {camisetas} from '../../../public/data/dataCamisetas';
+import {camisetas} from '../../data/dataCamisetas';
 import Plantilla from './Plantilla/Plantilla';
 import "./Plantilla/estiloscam.css"
 
 const Camisetas = () => {
   return (
-    <div>
+    <div className='fondo'>
         
-        <h2>Camisetas Boca</h2>
+        <h2 className='txtbj' >Camisetas Boca</h2>
         <section className='plantilla row'>
             {camisetas.map((camiseta) => {
             return (
