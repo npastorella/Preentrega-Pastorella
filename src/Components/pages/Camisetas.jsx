@@ -1,5 +1,5 @@
 import React from 'react';
-import {camisetas} from '../Data/dataCamisetas';
+import {camisetas} from '../../../public/data/dataCamisetas';
 import Plantilla from './Plantilla/Plantilla';
 import "./Plantilla/estiloscam.css"
 

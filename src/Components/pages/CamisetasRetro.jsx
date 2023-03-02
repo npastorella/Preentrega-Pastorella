@@ -1,5 +1,5 @@
 import React from 'react';
-import {retro} from '../Data/dataRetro';
+import {retro} from '../../../public/data/dataRetro';
 import PlantillaRetro from './Plantilla/PlantillaRetro';
 
 
