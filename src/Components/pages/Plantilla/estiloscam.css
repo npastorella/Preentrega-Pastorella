@@ -1,0 +1,20 @@
+.estCam{
+    width: 100%;
+    height: auto;
+    
+}
+
+.card{
+    margin: 10px;
+    width: 250px;
+
+}
+
+.boton{
+    border-radius: 5px;
+    background-color: blue;
+}
+
+.plantilla{
+    justify-content: center
+}

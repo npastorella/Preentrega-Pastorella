@@ -1,21 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Landing from './Components/Landing';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
+import Landing from "./components/Landing";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Camisetas from "./components/pages/Camisetas";
+import CamisetasRetro from "./components/pages/CamisetasRetro";
+import NavBarExamples from "./components/Navbar/Navbara";
+import { Navbar } from "react-bootstrap";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Landing/>
+    <BrowserRouter>
+      <Navbar/>
+      <NavBarExamples />
+      <Landing/>
+      <Routes>
+      <Route >            
+            <Route path='camisetas' element={<Camisetas />} />
+            <Route path='camisetasretro' element={<CamisetasRetro />} />
+      </Route>
+{/*         <Route exact path="/" element={<Landing />}>
+          <Route path="Camisetas" element={<Camisetas/>}/>
+          <Route path="CamisetasRetro" element={<CamisetasRetro/>}/>
 
+        </Route> */}
+
+
+
+        
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

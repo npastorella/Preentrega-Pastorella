@@ -1,7 +1,7 @@
 import React from "react";
-import CartWidget from "./CartWidget";
-import "./navbar.css"
-
+import CartWidget from "../CartWidget/CartWidget";
+import "./navbar.css";
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -25,16 +25,11 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active txtBarra" aria-current="page" href="#">
-                  Camisetas
-                </a>
+                <Link class="nav-link active txtBarra" aria-current="page" to ={'/'}>Inicio</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active txtBarra" aria-current="page" href="#">
-                  Camisetas Retro
-                </a>
+              <Link class="nav-link active txtBarra" aria-current="page" to ={"CamisetasRetro"}>Camisetas Retro</Link>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link active txtBarra" aria-current="page" href="#">
                   Camperas
