@@ -29,9 +29,6 @@ const ItemListContainer = (props) => {
   }, [])
 
 
-  console.log (arrayList);
-
-
   return ( 
     
     <div>

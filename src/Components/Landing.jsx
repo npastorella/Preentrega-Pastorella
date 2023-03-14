@@ -8,8 +8,7 @@ const Landing = () => {
   return (    
     <div>      
       <Carrusel/>
-      <ItemListContainer greeting="Bienvenidos al Sitio Oficial de Indumentaria de Boca Juniors"/>
-  {/*     <Camisetas/> */}
+      <ItemListContainer greeting="Bienvenidos al Sitio Oficial de Indumentaria de Boca Juniors"/>      
     </div>    
   );
 };

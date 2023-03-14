@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {camisetas} from '../../data/dataCamisetas';
 import Plantilla from './Plantilla/Plantilla';
-import "./Plantilla/estiloscam.css"
+import "./Plantilla/estiloscam.css";
+
 
 const Camisetas = () => {
+
+  
   return (
     <div className='fondo'>
         

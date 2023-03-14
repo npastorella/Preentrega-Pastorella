@@ -7,30 +7,25 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Camisetas from "./components/pages/Camisetas";
 import CamisetasRetro from "./components/pages/CamisetasRetro";
 import NavBarExamples from "./components/Navbar/Navbara";
-import { Navbar } from "react-bootstrap";
+import CartProvider from "./components/Context/CartContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Navbar/>
-      <NavBarExamples />
-      <Landing/>
-      <Routes>
-      <Route >            
-            <Route path='camisetas' element={<Camisetas />} />
-            <Route path='camisetasretro' element={<CamisetasRetro />} />
-      </Route>
-{/*         <Route exact path="/" element={<Landing />}>
-          <Route path="Camisetas" element={<Camisetas/>}/>
-          <Route path="CamisetasRetro" element={<CamisetasRetro/>}/>
 
-        </Route> */}
-
-
-
-        
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+  
+    <React.StrictMode>
+      <CartProvider/>
+        <BrowserRouter>          
+          <NavBarExamples />
+          <Landing/>
+            <Routes>
+              <Route >                   
+                    <Route exact path='camisetas' element={<Camisetas />} />
+                    <Route exact path='camisetasretro' element={<CamisetasRetro />} />
+              </Route>        
+            </Routes>
+        </BrowserRouter>
+      <CartProvider/>
+    </React.StrictMode>
+  
 );
