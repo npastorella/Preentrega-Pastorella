@@ -1,5 +1,5 @@
 import React, { useState, createContext } from "react";
-import { camisetas } from "../../data/dataCamisetas";
+
 
 export const CartContext = createContext({
   cart: [],
@@ -30,6 +30,7 @@ const CartProvider = (props) => {
 
   // Agregar un producto al carrito.
   const addToCart = (camiseta, quantity) => {
+    console.log(camiseta)
     if (isInCart(camiseta.id)) {
       setCart(cart.map((cartItem) => {
         if (cartItem.id === camiseta.id) {
@@ -58,7 +59,7 @@ const CartProvider = (props) => {
   // Obtener el total del carrito en función de la cantidad y el precio de cada producto
   const getTotal = () => {
     let total = 0
-    cart.forEach((e) => total += (e.quantity*e.price))
+    cart.forEach((e) => total += (e.quantity*e.precio))
     return total        
   };
 

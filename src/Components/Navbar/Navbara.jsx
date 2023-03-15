@@ -39,7 +39,7 @@ const NavBarExamples = () => {
                         
                         <li class='nav-item lista'>
                             <div
-                                className="cart-dropdown-wrapper"
+                                className="cartDesplegable fondoCart"
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}>
 
@@ -51,11 +51,11 @@ const NavBarExamples = () => {
                                     </span>
                                 )}
                                 {isOpen && (
-                                    <div className="cart-dropdown">
+                                    <div className="cartDesplegableHijo">
                                     <ul>
-                                        {cart.map((camisetas) => (
-                                        <li key={camisetas.id}>
-                                            <span>{camisetas.name} | <span style={{color: 'green'}}>x{camisetas.quantity}</span> <b>${camisetas.price*camisetas.quantity}</b></span>
+                                        {cart.map((camiseta) => (
+                                        <li key={camiseta.id}>                                                                              
+                                            <span>{camiseta.name} | <span style={{color: 'green'}}>x{camiseta.quantity}</span> | <b>${camiseta.precio*camiseta.quantity}</b></span>
                                         </li>
                                         ))}
                                     </ul>

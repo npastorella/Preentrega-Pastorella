@@ -14,7 +14,7 @@ root.render(
 
   
     <React.StrictMode>
-      <CartProvider/>
+      <CartProvider>
         <BrowserRouter>          
           <NavBarExamples />
           <Landing/>
@@ -25,7 +25,7 @@ root.render(
               </Route>        
             </Routes>
         </BrowserRouter>
-      <CartProvider/>
+      </CartProvider>
     </React.StrictMode>
   
 );
