@@ -18,10 +18,9 @@ const Plantilla = (camiseta) => {
             <br />           
             <button className='botonAgregar' onClick={() => addToCart(camiseta, 1)}> Agregar al carrito </button>
             <button className='botonBorrar' onClick={() => removeFromCart(camiseta.id)}> X </button>
-
-        </div>
-    </div>
-  )
+        </div>       
+    </div>    
+  )  
 }
 
 export default Plantilla

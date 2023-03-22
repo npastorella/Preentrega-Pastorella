@@ -1,0 +1,22 @@
+.card{
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.botonAdd{
+    background-color: blue;
+    color: bisque;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+}
+
+.botonRemove{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
