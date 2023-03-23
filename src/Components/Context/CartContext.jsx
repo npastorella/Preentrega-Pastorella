@@ -29,8 +29,7 @@ const CartProvider = (props) => {
   }
 
   // Agregar un producto al carrito.
-  const addToCart = (camiseta, quantity) => {
-    console.log(camiseta)
+  const addToCart = (camiseta, quantity) => {   
     if (isInCart(camiseta.id)) {
       setCart(cart.map((cartItem) => {
         if (cartItem.id === camiseta.id) {
